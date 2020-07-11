@@ -1,6 +1,6 @@
 ﻿using GraphQL;
 
-namespace GraphQlUsingAspCoreDotNet.GraphQl
+namespace GraphQlWithNetCore.GraphQl
 {
     public class TestCarvedSchema:GraphQL.Types.Schema
     {

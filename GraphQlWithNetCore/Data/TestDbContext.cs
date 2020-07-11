@@ -1,9 +1,9 @@
-﻿using GraphQlUsingAspCoreDotNet.Enums;
+﻿using GraphQlWithNetCore.Enums;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
-namespace GraphQlUsingAspCoreDotNet.Data
+namespace GraphQlWithNetCore.Data
 {
     public class TestDbContext : DbContext
     {

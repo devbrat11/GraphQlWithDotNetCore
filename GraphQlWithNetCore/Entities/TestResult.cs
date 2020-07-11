@@ -1,7 +1,7 @@
-﻿using GraphQlUsingAspCoreDotNet.Enums;
+﻿using GraphQlWithNetCore.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace GraphQlUsingAspCoreDotNet.Data
+namespace GraphQlWithNetCore.Data
 {
     public class TestResult
     {

@@ -1,8 +1,8 @@
-﻿using GraphQlUsingAspCoreDotNet.Data;
+﻿using GraphQlWithNetCore.Data;
 using GraphQL.Types;
-using GraphQlUsingAspCoreDotNet.GraphQl.Types;
+using GraphQlWithNetCore.GraphQl.Types;
 
-namespace GraphQlUsingAspCoreDotNet.GraphQl
+namespace GraphQlWithNetCore.GraphQl
 {
     public class TestCarvedQuery:ObjectGraphType
     {

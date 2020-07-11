@@ -1,7 +1,7 @@
 ﻿using GraphQL.Types;
-using GraphQlUsingAspCoreDotNet.Enums;
+using GraphQlWithNetCore.Enums;
 
-namespace GraphQlUsingAspCoreDotNet.GraphQl.Types
+namespace GraphQlWithNetCore.GraphQl.Types
 {
     public class VerdictEnumType : EnumerationGraphType<Verdict>
     {

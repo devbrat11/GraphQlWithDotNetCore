@@ -1,15 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using GraphQlWithNetCore.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GraphQlUsingAspCoreDotNet.Controllers
+namespace GraphQlWithNetCore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class TestsController : ControllerBase
     {
+        IRepository _repository;
+
+        public TestsController(IRepository repository)
+        {
+            _repository = repository;
+        }
+        
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var data = _repository.GetAllTests();
+            return Ok(data);
+        }
     }
 }

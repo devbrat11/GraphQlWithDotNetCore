@@ -1,5 +1,5 @@
-﻿using GraphQlUsingAspCoreDotNet.Data;
-using GraphQlUsingAspCoreDotNet.GraphQl;
+﻿using GraphQlWithNetCore.Data;
+using GraphQlWithNetCore.GraphQl;
 using GraphQL;
 using GraphQL.Server;
 using GraphQL.Server.Ui.Playground;
@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace GraphQlUsingAspCoreDotNet
+namespace GraphQlWithNetCore
 {
     public class Startup
     {

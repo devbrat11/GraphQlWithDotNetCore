@@ -1,4 +1,4 @@
-﻿namespace GraphQlUsingAspCoreDotNet.Enums
+﻿namespace GraphQlWithNetCore.Enums
 {
     public enum Verdict
     {

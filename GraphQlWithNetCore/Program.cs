@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace GraphQlUsingAspCoreDotNet
+namespace GraphQlWithNetCore
 {
     public class Program
     {

@@ -1,7 +1,7 @@
-﻿using GraphQlUsingAspCoreDotNet.Data;
+﻿using GraphQlWithNetCore.Data;
 using GraphQL.Types;
 
-namespace GraphQlUsingAspCoreDotNet.GraphQl.Types
+namespace GraphQlWithNetCore.GraphQl.Types
 {
     public class TestType:ObjectGraphType<Test>
     {

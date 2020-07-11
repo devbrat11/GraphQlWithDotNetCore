@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GraphQlUsingAspCoreDotNet.Data
+namespace GraphQlWithNetCore.Data
 {
     public interface IRepository
     {
