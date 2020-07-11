@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1169
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQlUsingAspCoreDotNet", "GraphQlUsingAspCoreDotNet\GraphQlUsingAspCoreDotNet.csproj", "{B591CBF9-6075-477A-B2A1-0D6FD5882C93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQlWithNetCore", "GraphQlWithNetCore\GraphQlWithNetCore.csproj", "{B591CBF9-6075-477A-B2A1-0D6FD5882C93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
