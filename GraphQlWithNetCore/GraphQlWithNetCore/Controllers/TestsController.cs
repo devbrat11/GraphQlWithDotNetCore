@@ -20,5 +20,12 @@ namespace GraphQlWithNetCore.Controllers
             var data = _repository.GetAllTests();
             return Ok(data);
         }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            var data = _repository.GetTest(id);
+            return Ok(data);
+        }
     }
 }

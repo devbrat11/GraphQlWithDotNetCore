@@ -2,6 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/GraphQlWithNetCore/obj
-/GraphQlWithNetCore/bin/Debug
-/.vs
+/GraphQlWithNetCore/GraphQlWithNetCore/obj
+/GraphQlWithNetCore/GraphQlWithNetCore/bin/Debug
+/GraphQlWithNetCore/.vs
