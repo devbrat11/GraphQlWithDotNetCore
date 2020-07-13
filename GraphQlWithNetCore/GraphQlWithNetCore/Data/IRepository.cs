@@ -7,5 +7,7 @@ namespace GraphQlWithNetCore.Data
         IEnumerable<Test> GetAllTests();
         Test GetTest(int id);
         IEnumerable<TestResult> GetTestResults(int testId);
+        Test CreateTest(Test test);
+        TestResult AddTestResult(TestResult testResult);
     }
 }

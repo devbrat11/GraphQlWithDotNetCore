@@ -12,6 +12,20 @@ namespace GraphQlWithNetCore.Data
             _context = context;
         }
 
+        public TestResult AddTestResult(TestResult testResult)
+        {
+            _context.TestResults.Add(testResult);
+            _context.SaveChanges();
+            return testResult;
+        }
+
+        public Test CreateTest(Test test)
+        {
+            _context.Tests.Add(test);
+            _context.SaveChanges();
+            return test;
+        }
+
         public IEnumerable<Test> GetAllTests()
         {
             return _context.Tests;

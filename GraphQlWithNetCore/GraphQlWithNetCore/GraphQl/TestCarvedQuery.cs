@@ -1,5 +1,5 @@
-﻿using GraphQlWithNetCore.Data;
-using GraphQL.Types;
+﻿using GraphQL.Types;
+using GraphQlWithNetCore.Data;
 using GraphQlWithNetCore.GraphQl.Types;
 
 namespace GraphQlWithNetCore.GraphQl

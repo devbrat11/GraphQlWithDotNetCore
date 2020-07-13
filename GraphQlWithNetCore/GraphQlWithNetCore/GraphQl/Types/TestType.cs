@@ -17,4 +17,16 @@ namespace GraphQlWithNetCore.GraphQl.Types
         }
        
     }
+
+    public class TestInputType : InputObjectGraphType
+    {
+        public TestInputType()
+        {
+            Name = "testInput";
+            Field<IntGraphType>("id");
+            Field<StringGraphType>("name");
+            Field<StringGraphType>("tester");
+            Field<StringGraphType>("Description");
+        }
+    }
 }

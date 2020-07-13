@@ -12,4 +12,15 @@ namespace GraphQlWithNetCore.GraphQl.Types
             Field<VerdictEnumType>("Verdict", "Result Verdict");
         }
     }
+
+    public class TestResultInputType : InputObjectGraphType
+    {
+        public TestResultInputType()
+        {
+            Name = "testResultInput";
+            Field<StringGraphType>("resultId");
+            Field<IntGraphType>("testId");
+            Field<VerdictEnumType>("verdict");
+        }
+    }
 }

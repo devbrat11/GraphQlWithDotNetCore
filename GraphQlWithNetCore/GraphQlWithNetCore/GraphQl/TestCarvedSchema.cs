@@ -7,6 +7,7 @@ namespace GraphQlWithNetCore.GraphQl
         public TestCarvedSchema(IDependencyResolver resolver):base(resolver)
         {
             Query = resolver.Resolve<TestCarvedQuery>();
+            Mutation = resolver.Resolve<TestCarvedMutation>();
         }
     }
 }
