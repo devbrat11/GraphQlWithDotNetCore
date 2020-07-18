@@ -28,7 +28,7 @@ namespace GraphQlWithNetCore
             services.AddDbContext<TestDbContext>(x => x.UseInMemoryDatabase($"TestDb"));
             services.AddScoped<IRepository, TestRepository>();
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
-            services.AddScoped<TestCarvedSchema>();
+            services.AddScoped<AppSchema>();
             services.AddGraphQL(o=> { o.ExposeExceptions = true; })
                 .AddGraphTypes(ServiceLifetime.Scoped);
         }
@@ -44,7 +44,7 @@ namespace GraphQlWithNetCore
             {
                 app.UseHsts();
             }
-            app.UseGraphQL<TestCarvedSchema>();
+            app.UseGraphQL<AppSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
             app.UseHttpsRedirection();
             app.UseMvc();

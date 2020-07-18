@@ -4,12 +4,12 @@ using GraphQlWithNetCore.GraphQl.Types;
 
 namespace GraphQlWithNetCore.GraphQl
 {
-    public class TestCarvedQuery : ObjectGraphType
+    public class TestQuery : ObjectGraphType
     {
-        public TestCarvedQuery(IRepository repository)
+        public TestQuery(IRepository repository)
         {
             Field<ListGraphType<TestType>>(
-                "Tests",
+                "tests",
                 resolve: context =>
                 {
                     return repository.GetAllTests();
@@ -17,9 +17,9 @@ namespace GraphQlWithNetCore.GraphQl
                 );
 
             Field<TestType>(
-               "Test",
+               "test",
                arguments: new QueryArguments(
-                new QueryArgument<IntGraphType> { Name = "id" }),
+                new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "id" }),
                resolve: context =>
                {
                    var id = context.GetArgument<int>("id");
@@ -27,6 +27,14 @@ namespace GraphQlWithNetCore.GraphQl
                }
 
                );
+
+            Field<ListGraphType<TestResultType>>(
+                "testResults",
+                resolve: context =>
+                {
+                    return repository.GetAllTestResults();
+                }
+                );
         }
     }
 }

@@ -15,18 +15,5 @@ namespace GraphQlWithNetCore.GraphQl.Types
                 "Results",
                 resolve:context=>repository.GetTestResults(context.Source.Id));
         }
-       
-    }
-
-    public class TestInputType : InputObjectGraphType
-    {
-        public TestInputType()
-        {
-            Name = "testInput";
-            Field<NonNullGraphType<IntGraphType>>("id");
-            Field<StringGraphType>("name");
-            Field<StringGraphType>("tester");
-            Field<StringGraphType>("description");
-        }
     }
 }

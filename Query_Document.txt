@@ -1,4 +1,38 @@
-mutation m10 ($test:testInput!){
+query getAllTests{
+  tests{
+    id
+    name
+    tester
+	description
+    results{
+      resultId
+      verdict
+    }
+  }
+}
+
+query getTestWithId{
+  test(id:1){
+    id 
+    name
+    tester
+	description
+    results{
+      resultId
+      verdict
+    }
+  }
+}
+
+query getAllTestResults{
+  testResults{
+    resultId
+    testId
+    verdict
+  }
+}
+
+mutation createTest ($test:testInput!){
   createTest(test:$test) {
     id
     name
@@ -6,18 +40,47 @@ mutation m10 ($test:testInput!){
   }
 }
 
-mutation m11 ($testResult:testResultInput!){
-  addTestResult(testResult:$testResult) {
+Query Variables ===>
+{
+  "test": {
+    "id": 101,
+    "name": "dev-test",
+    "tester": "devbrat",
+    "description": "manual tests performed during development"
+  }
+}
+
+mutation updateTest ($id:Int!,$test:testInput!){
+  updateTest(id:$id,test:$test) {
     id
     name
     tester
   }
 }
 
-query q10{
-  tests{
-    id
-    name
-    tester
+mutation deleteTest($id:Int!){
+  deleteTest(id:$id)
+}
+
+Query Variables ===>
+{
+  "id": 4
+}
+
+
+mutation addTesResult ($testResult:testResultInput!){
+  addTestResult(testResult:$testResult) {
+   	resultId
+    testId
+    verdict
+  }
+}
+
+Query Variables ===>
+{
+  "testResult": {
+    "resultId": "R30",
+    "testId": 1,
+    "verdict": "ABORTED"
   }
 }
