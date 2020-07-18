@@ -23,7 +23,7 @@ namespace GraphQlWithNetCore.GraphQl
                 }
                 );
 
-            Field<TestType>(
+            Field<TestResultType>(
                "addTestResult",
                arguments: new QueryArguments(new QueryArgument<TestResultInputType>() { Name = "testResult" }),
 

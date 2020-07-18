@@ -18,7 +18,7 @@ namespace GraphQlWithNetCore.GraphQl.Types
         public TestResultInputType()
         {
             Name = "testResultInput";
-            Field<StringGraphType>("resultId");
+            Field<NonNullGraphType<StringGraphType>>("resultId");
             Field<IntGraphType>("testId");
             Field<VerdictEnumType>("verdict");
         }

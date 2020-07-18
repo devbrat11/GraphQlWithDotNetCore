@@ -33,7 +33,7 @@ namespace GraphQlWithNetCore.Data
 
         public Test GetTest(int id)
         {
-            var test = _context.Tests.ToList().First(x=>x.Id.Equals(id));
+            var test = _context.Tests.ToList().FirstOrDefault(x=>x.Id.Equals(id));
             return test;
         }
 

@@ -1,0 +1,23 @@
+mutation m10 ($test:testInput!){
+  createTest(test:$test) {
+    id
+    name
+    tester
+  }
+}
+
+mutation m11 ($testResult:testResultInput!){
+  addTestResult(testResult:$testResult) {
+    id
+    name
+    tester
+  }
+}
+
+query q10{
+  tests{
+    id
+    name
+    tester
+  }
+}

@@ -23,10 +23,10 @@ namespace GraphQlWithNetCore.GraphQl.Types
         public TestInputType()
         {
             Name = "testInput";
-            Field<IntGraphType>("id");
+            Field<NonNullGraphType<IntGraphType>>("id");
             Field<StringGraphType>("name");
             Field<StringGraphType>("tester");
-            Field<StringGraphType>("Description");
+            Field<StringGraphType>("description");
         }
     }
 }

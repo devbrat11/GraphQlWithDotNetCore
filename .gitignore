@@ -3,5 +3,8 @@
 ################################################################################
 
 /GraphQlWithNetCore/GraphQlWithNetCore/obj
-/GraphQlWithNetCore/GraphQlWithNetCore/bin/Debug
+/GraphQlWithNetCore/GraphQlWithNetCore/bin
 /GraphQlWithNetCore/.vs
+/GraphQl-Client/.vs
+/GraphQl-Client/GraphQl-Client/bin
+/GraphQl-Client/GraphQl-Client/obj
