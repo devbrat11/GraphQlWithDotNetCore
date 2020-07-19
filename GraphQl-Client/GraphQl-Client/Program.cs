@@ -9,7 +9,7 @@ namespace GraphQl_Client
     {
         static void Main(string[] args)
         {
-            var client = new HttpClientHandler();
+            var client = new GraphQlClientHandler();
             var tests = client.GetAllTests();
         }
     }

@@ -23,7 +23,14 @@ namespace GraphQlWithNetCore.GraphQl
                resolve: context =>
                {
                    var id = context.GetArgument<int>("id");
-                   return repository.GetTest(id);
+                   var test = repository.GetTest(id);
+                   if (test == null)
+                   {
+                       //logging error
+                       context.Errors.Add(new GraphQL.ExecutionError("Test does not exist!"));
+                       return null;
+                   }
+                   return test;
                }
 
                );

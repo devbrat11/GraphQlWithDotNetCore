@@ -23,7 +23,7 @@ namespace GraphQl_Client
 
     public class Backend
     {
-        public static string GraphQlEndPoint { get; } = @"http://localhost:44388/graphql/";
+        public static string GraphQlEndPoint { get; } = @"https://localhost:44388/graphql/";
     }
 
     public class QueryBuilder
