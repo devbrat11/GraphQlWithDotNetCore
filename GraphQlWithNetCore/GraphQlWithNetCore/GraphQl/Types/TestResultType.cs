@@ -3,6 +3,9 @@ using GraphQlWithNetCore.Data;
 
 namespace GraphQlWithNetCore.GraphQl.Types
 {
+    /// <summary>
+    /// Wrapper Output Model class for the TestResult entity
+    /// </summary>
     public class TestResultType : ObjectGraphType<TestResult>
     {
         public TestResultType()

@@ -4,6 +4,9 @@ using GraphQlWithNetCore.GraphQl.Types;
 
 namespace GraphQlWithNetCore.GraphQl
 {
+    /// <summary>
+    /// Query Definition Class
+    /// </summary>
     public class TestQuery : ObjectGraphType
     {
         public TestQuery(IRepository repository)

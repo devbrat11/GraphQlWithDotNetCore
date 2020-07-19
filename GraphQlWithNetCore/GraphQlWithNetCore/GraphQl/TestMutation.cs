@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using GraphQL.Types;
+﻿using GraphQL.Types;
 using GraphQlWithNetCore.Data;
+using GraphQlWithNetCore.GraphQl.Messaging;
 using GraphQlWithNetCore.GraphQl.Types;
 
 namespace GraphQlWithNetCore.GraphQl
 {
+    /// <summary>
+    /// Mutation Defintion Class
+    /// </summary>
     public class TestMutation : ObjectGraphType
     {
-        public TestMutation(IRepository repository)
+        public TestMutation(IRepository repository,TestUpdatesMessagingService messagingService)
         {
             Field<TestType>(
                 "createTest",
@@ -19,7 +19,9 @@ namespace GraphQlWithNetCore.GraphQl
                 resolve: context =>
                 {
                     var test = context.GetArgument<Test>("test");
-                    return repository.CreateTest(test);
+                    repository.CreateTest(test);
+                    messagingService.AddTestAddedMessage(test);
+                    return test;
                 }
                 );
 
@@ -31,7 +33,8 @@ namespace GraphQlWithNetCore.GraphQl
                {
                    var id = context.GetArgument<int>("id");
                    var updatedTest = context.GetArgument<Test>("test");
-                   return repository.UpdateTest(id,updatedTest);
+                   var isUpdated = repository.UpdateTest(id,updatedTest);
+                   return isUpdated;
                }
                );
 
@@ -42,7 +45,8 @@ namespace GraphQlWithNetCore.GraphQl
              resolve: context =>
              {
                  var id = context.GetArgument<int>("id");
-                 return repository.DeleteTest(id);
+                 var isDeleted = repository.DeleteTest(id);
+                 return isDeleted;
              }
              );
 
@@ -53,7 +57,8 @@ namespace GraphQlWithNetCore.GraphQl
                resolve: context =>
                {
                    var testResult = context.GetArgument<TestResult>("testResult");
-                   return repository.AddTestResult(testResult);
+                   repository.AddTestResult(testResult);
+                   return testResult;
                }
                );
         }

@@ -3,6 +3,9 @@ using GraphQL.Types;
 
 namespace GraphQlWithNetCore.GraphQl.Types
 {
+    /// <summary>
+    /// Wrapper Output Model class for the Test entity
+    /// </summary>
     public class TestType:ObjectGraphType<Test>
     {
         public TestType(IRepository repository)

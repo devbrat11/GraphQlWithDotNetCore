@@ -12,18 +12,16 @@ namespace GraphQlWithNetCore.Data
             _context = context;
         }
 
-        public TestResult AddTestResult(TestResult testResult)
+        public void AddTestResult(TestResult testResult)
         {
             _context.TestResults.Add(testResult);
             _context.SaveChanges();
-            return testResult;
         }
 
-        public Test CreateTest(Test test)
+        public void CreateTest(Test test)
         {
             _context.Tests.Add(test);
             _context.SaveChanges();
-            return test;
         }
 
         public bool DeleteTest(int testId)

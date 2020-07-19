@@ -2,6 +2,9 @@
 
 namespace GraphQlWithNetCore.GraphQl.Types
 {
+    /// <summary>
+    /// Wrapper Input Model class for the Test entity
+    /// </summary>
     public class TestInputType : InputObjectGraphType
     {
         public TestInputType()

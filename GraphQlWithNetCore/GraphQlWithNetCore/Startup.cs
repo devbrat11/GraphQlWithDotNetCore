@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using GraphQlWithNetCore.GraphQl.Messaging;
 
 namespace GraphQlWithNetCore
 {
@@ -26,15 +27,22 @@ namespace GraphQlWithNetCore
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<TestDbContext>(x => x.UseInMemoryDatabase($"TestDb"));
+
             services.AddScoped<IRepository, TestRepository>();
+
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddScoped<AppSchema>();
-            services.AddGraphQL(o=> { o.ExposeExceptions = true; })
-                .AddGraphTypes(ServiceLifetime.Scoped);
+            services.AddSingleton<TestUpdatesMessagingService>();
+
+            services.AddGraphQL(o => { o.ExposeExceptions = true; })
+                .AddGraphTypes(ServiceLifetime.Scoped)
+                .AddWebSockets();
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env,TestDbContext dbContext)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, TestDbContext dbContext)
         {
             if (env.IsDevelopment())
             {
@@ -44,8 +52,16 @@ namespace GraphQlWithNetCore
             {
                 app.UseHsts();
             }
+            app.UseCors(
+                builder => builder.AllowAnyOrigin()
+                                  .AllowAnyHeader()
+                                  .AllowAnyMethod()
+            );
+            app.UseWebSockets();
+            app.UseGraphQLWebSockets<AppSchema>("/graphql");
             app.UseGraphQL<AppSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
+
             app.UseHttpsRedirection();
             app.UseMvc();
 

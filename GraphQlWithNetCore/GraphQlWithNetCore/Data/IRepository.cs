@@ -8,8 +8,8 @@ namespace GraphQlWithNetCore.Data
         Test GetTest(int id);
         IEnumerable<TestResult> GetAllTestResults();
         IEnumerable<TestResult> GetTestResults(int testId);
-        Test CreateTest(Test test);
-        TestResult AddTestResult(TestResult testResult);
+        void CreateTest(Test test);
+        void AddTestResult(TestResult testResult);
         bool UpdateTest(int testId, Test test);
         bool DeleteTest(int testId);
     }
