@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GraphQl_Client.Model
+namespace GraphQl_Client.Library.Model
 {
     public class Test
     {

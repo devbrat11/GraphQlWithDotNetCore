@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
-using GraphQl_Client.Model;
-using Newtonsoft.Json;
+using GraphQl_Client.Library.Helpers;
+using GraphQl_Client.Library.Model;
 
-namespace GraphQl_Client
+namespace GraphQl_Client.Library.Client
 {
-    public class HttpClientHandler : IClientHandler
+    public class HttpBasedClientHandler : IClientHandler
     {
         private HttpClient _httpClient;
 
-        public HttpClientHandler()
+        public HttpBasedClientHandler()
         {
             _httpClient = new HttpClient()
             {
@@ -21,7 +20,8 @@ namespace GraphQl_Client
 
         public IEnumerable<Test> GetAllTests()
         {
-            throw new NotImplementedException();
+            var response = _httpClient.GetAsync("tests").Result;
+            return new List<Test>();
         }
 
         public Test GetTest(int testId)

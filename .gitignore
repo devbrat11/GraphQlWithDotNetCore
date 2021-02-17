@@ -3,8 +3,10 @@
 ################################################################################
 
 /GraphQl_Client/.vs
-/GraphQl_Client/GraphQl_Client/bin
-/GraphQl_Client/GraphQl_Client/obj
+/GraphQl_Client/GraphQl_Client.Library/bin
+/GraphQl_Client/GraphQl_Client.Library/obj
+/GraphQl_Client/GraphQl_Client.UI/bin
+/GraphQl_Client/GraphQl_Client.UI/obj
 /GraphQl_Backend/.vs
 /GraphQl_Backend/GraphQl_Backend/obj
 /GraphQl_Backend/GraphQl_Backend/bin

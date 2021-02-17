@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using GraphQL.Client.Http;
-using GraphQl_Client.Model;
 using GraphQL.Client.Serializer.Newtonsoft;
 using GraphQL;
-using System.Threading.Tasks;
+using GraphQl_Client.Library.Helpers;
+using GraphQl_Client.Library.Model;
 
-namespace GraphQl_Client
+namespace GraphQl_Client.Library.Client
 {
     public class GraphQlClientHandler : IClientHandler
     {
@@ -29,8 +29,6 @@ namespace GraphQl_Client
             var response = _client.SendQueryAsync<IEnumerable<Test>>(request).Result;
 
             return new List<Test>();
-
-
         }
 
         public Test GetTest(int testId)
