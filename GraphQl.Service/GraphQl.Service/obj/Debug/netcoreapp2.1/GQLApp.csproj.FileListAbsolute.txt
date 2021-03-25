@@ -1,0 +1,14 @@
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\bin\Debug\netcoreapp2.1\GQLApp.deps.json
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\bin\Debug\netcoreapp2.1\GQLApp.runtimeconfig.json
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\bin\Debug\netcoreapp2.1\GQLApp.runtimeconfig.dev.json
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\bin\Debug\netcoreapp2.1\GQLApp.dll
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\bin\Debug\netcoreapp2.1\GQLApp.pdb
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.csproj.CoreCompileInputs.cache
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.RazorAssemblyInfo.cache
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.RazorAssemblyInfo.cs
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.AssemblyInfoInputs.cache
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.AssemblyInfo.cs
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.RazorTargetAssemblyInfo.cache
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.dll
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.pdb
+C:\Users\dsingh02\source\repos\GQLApp\GQLApp\obj\Debug\netcoreapp2.1\GQLApp.csprojAssemblyReference.cache

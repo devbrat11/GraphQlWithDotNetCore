@@ -1,0 +1,14 @@
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\bin\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.deps.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\bin\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.runtimeconfig.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\bin\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.runtimeconfig.dev.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\bin\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.dll
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\bin\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.pdb
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.csprojAssemblyReference.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.csproj.CoreCompileInputs.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.RazorAssemblyInfo.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.RazorAssemblyInfo.cs
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.AssemblyInfoInputs.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.AssemblyInfo.cs
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.RazorTargetAssemblyInfo.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.dll
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQlWithDotNetCore-Backend\GraphQlWithDotNetCore-Backend\obj\Debug\netcoreapp2.1\GraphQlWithDotNetCore-Backend.pdb

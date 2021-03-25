@@ -1,0 +1,13 @@
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\bin\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.deps.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\bin\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.runtimeconfig.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\bin\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.runtimeconfig.dev.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\bin\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.dll
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\bin\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.pdb
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.csproj.CoreCompileInputs.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.RazorAssemblyInfo.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.RazorAssemblyInfo.cs
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.AssemblyInfoInputs.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.AssemblyInfo.cs
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.RazorTargetAssemblyInfo.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.dll
+C:\Users\dsingh02\source\my-repos\GraphQlWithNetCore\GraphQlWithNetCore\GraphQlWithNetCore\obj\Debug\netcoreapp2.1\GraphQlWithNetCore_Backend.pdb

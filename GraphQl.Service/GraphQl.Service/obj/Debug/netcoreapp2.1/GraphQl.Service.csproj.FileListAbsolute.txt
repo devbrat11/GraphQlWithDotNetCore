@@ -1,0 +1,17 @@
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\bin\Debug\netcoreapp2.1\GraphQl.Service.deps.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\bin\Debug\netcoreapp2.1\GraphQl.Service.runtimeconfig.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\bin\Debug\netcoreapp2.1\GraphQl.Service.runtimeconfig.dev.json
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\bin\Debug\netcoreapp2.1\GraphQl.Service.dll
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\bin\Debug\netcoreapp2.1\GraphQl.Service.pdb
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.csprojAssemblyReference.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.AssemblyInfoInputs.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.AssemblyInfo.cs
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.csproj.CoreCompileInputs.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.RazorAssemblyInfo.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.RazorAssemblyInfo.cs
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.RazorTargetAssemblyInfo.cache
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.dll
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.pdb
+C:\Users\dsingh02\source\my-repos\GraphQlWithDotNetCore\GraphQl.Service\GraphQl.Service\obj\Debug\netcoreapp2.1\GraphQl.Service.genruntimeconfig.cache
