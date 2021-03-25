@@ -4,6 +4,11 @@ using System.Text;
 
 namespace GraphQl_Client.Library.Model
 {
+    public class TestData
+    {
+        public List<Test> Tests { get; set; }
+    }
+
     public class Test
     {
         public int Id { get; set; }

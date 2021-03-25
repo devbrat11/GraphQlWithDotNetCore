@@ -4,9 +4,17 @@ namespace GraphQl_Client.Library
 {
     public class ClientHandlerFactory
     {
-        public static IClientHandler GetClientHandler()
+        public static IClientHandler GetClientHandler(int handler)
         {
-            return new HttpBasedClientHandler();
+            if (handler == 0)
+            {
+                return new HttpBasedClientHandler();
+            }
+            else
+            {
+                return new GraphQlClientHandler();
+            }
+
         }
     }
 }

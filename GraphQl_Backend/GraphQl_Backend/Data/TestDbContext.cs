@@ -75,8 +75,6 @@ namespace GraphQl_Backend.Data
                              TestId = new Random().Next(1,4),
                              Verdict = (Verdict)new Random().Next(0, 3)
                          });
-
-
                 }
             }
         }

@@ -44,12 +44,18 @@ namespace GraphQl_Backend.Data
 
         public IEnumerable<Test> GetAllTests()
         {
-            return _context.Tests;
+            var tests = _context.Tests;
+            foreach(var test in tests)
+            {
+                test.Results = GetTestResults(test.Id).ToList();
+            }
+            return tests;
         }
 
         public Test GetTest(int id)
         {
             var test = _context.Tests.ToList().FirstOrDefault(x=>x.Id.Equals(id));
+            test.Results = GetTestResults(test.Id).ToList();
             return test;
         }
 

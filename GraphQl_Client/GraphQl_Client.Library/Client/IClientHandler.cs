@@ -5,7 +5,7 @@ namespace GraphQl_Client.Library.Client
 {
     public interface IClientHandler
     {
-        IEnumerable<Test> GetAllTests();
+        List<Test> GetAllTests();
         Test GetTest(int testId);
     }
 

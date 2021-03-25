@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using GraphQl_Client.Library.Helpers;
 using GraphQl_Client.Library.Model;
+using Newtonsoft.Json;
 
 namespace GraphQl_Client.Library.Client
 {
@@ -18,15 +19,20 @@ namespace GraphQl_Client.Library.Client
             };
         }
 
-        public IEnumerable<Test> GetAllTests()
+        public List<Test> GetAllTests()
         {
-            var response = _httpClient.GetAsync("tests").Result;
-            return new List<Test>();
+            var result = _httpClient.GetAsync("tests").Result;
+            var data = result.Content.ReadAsStringAsync();
+            var tests = JsonConvert.DeserializeObject<List<Test>>(data.Result);
+            return tests;
         }
 
         public Test GetTest(int testId)
         {
-            throw new NotImplementedException();
+            var result = _httpClient.GetAsync($"tests/{testId}").Result;
+            var data = result.Content.ReadAsStringAsync();
+            var test = JsonConvert.DeserializeObject<Test>(data.Result);
+            return test;
         }
     }
 }

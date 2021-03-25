@@ -5,6 +5,7 @@ using GraphQL.Client.Serializer.Newtonsoft;
 using GraphQL;
 using GraphQl_Client.Library.Helpers;
 using GraphQl_Client.Library.Model;
+using Newtonsoft.Json;
 
 namespace GraphQl_Client.Library.Client
 {
@@ -20,20 +21,35 @@ namespace GraphQl_Client.Library.Client
             }, new NewtonsoftJsonSerializer());
         }
 
-        public IEnumerable<Test> GetAllTests()
+        public List<Test> GetAllTests()
         {
             var request = new GraphQLRequest()
             {
                 Query = QueryBuilder.GetAllTestsQuery(),
             };
-            var response = _client.SendQueryAsync<IEnumerable<Test>>(request).Result;
 
-            return new List<Test>();
+            var response = _client.SendQueryAsync<object>(request);
+            var result = JsonConvert.DeserializeObject<TestData>(response.Result.Data.ToString());
+
+            return result.Tests ;
         }
 
         public Test GetTest(int testId)
         {
-            throw new NotImplementedException();
+            var request = new GraphQLRequest()
+            {
+                Query = QueryBuilder.GetTestForIdQuery(testId),
+            };
+
+            var response = _client.SendQueryAsync<object>(request);
+            var result = JsonConvert.DeserializeObject<TestData>(response.Result.Data.ToString());
+
+            return result.Tests[0];
         }
+    }
+
+    public class TestData
+    {
+        public List<Test> Tests{ get; set; }
     }
 }
