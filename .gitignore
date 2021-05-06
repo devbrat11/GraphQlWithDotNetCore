@@ -7,6 +7,9 @@
 /GraphQl.Client/GraphQl.Client.Library/obj
 /GraphQl.Client/GraphQl.Client.UI/bin
 /GraphQl.Client/GraphQl.Client.UI/obj
+/GraphQl.Service/.vs/
+/GraphQl.Service/GraphQl.Service/obj
+/GraphQl.Service/GraphQl.Service/bin
 
 
 
