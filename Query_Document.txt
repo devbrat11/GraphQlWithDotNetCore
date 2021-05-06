@@ -1,86 +1,20 @@
-query getAllTests{
-  tests{
-    id
+query getUserWithID {
+  user(userID: "abc3@graphqlservice.com") {
+    pK
     name
-    tester
-	description
-    results{
-      resultId
-      verdict
-    }
+    dateOfBirth
+    userID
   }
 }
 
-query getTestWithId{
-  test(id:1){
-    id 
+query getAllUsers{
+  users {
+    pK
     name
-    tester
-	description
-    results{
-      resultId
-      verdict
-    }
+	dateOfBirth
+    userID
   }
 }
 
-query getAllTestResults{
-  testResults{
-    resultId
-    testId
-    verdict
-  }
-}
-
-mutation createTest ($test:testInput!){
-  createTest(test:$test) {
-    id
-    name
-    tester
-  }
-}
-
-Query Variables ===>
-{
-  "test": {
-    "id": 101,
-    "name": "dev-test",
-    "tester": "devbrat",
-    "description": "manual tests performed during development"
-  }
-}
-
-mutation updateTest ($id:Int!,$test:testInput!){
-  updateTest(id:$id,test:$test) {
-    id
-    name
-    tester
-  }
-}
-
-mutation deleteTest($id:Int!){
-  deleteTest(id:$id)
-}
-
-Query Variables ===>
-{
-  "id": 4
-}
 
 
-mutation addTesResult ($testResult:testResultInput!){
-  addTestResult(testResult:$testResult) {
-   	resultId
-    testId
-    verdict
-  }
-}
-
-Query Variables ===>
-{
-  "testResult": {
-    "resultId": "R30",
-    "testId": 1,
-    "verdict": "ABORTED"
-  }
-}

@@ -1,4 +1,5 @@
 ﻿using GraphQL;
+using GraphQlService.GraphQl.UserService;
 
 namespace GraphQlService.GraphQl
 {
@@ -9,9 +10,9 @@ namespace GraphQlService.GraphQl
     {
         public AppSchema(IDependencyResolver resolver):base(resolver)
         {
-            Query = resolver.Resolve<TestQuery>();
-            Mutation = resolver.Resolve<TestMutation>();
-            Subscription = resolver.Resolve<TestSubscription>();
+            Query = resolver.Resolve<UserQuery>();
+            Mutation = resolver.Resolve<UserMutation>();
+            Subscription = resolver.Resolve<UserSubscription>();
         }
     }
 }

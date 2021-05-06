@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using GraphQlService.GraphQl.Messaging;
+using GraphQlService.GraphQl.UserService.Messaging;
 
 namespace GraphQlService
 {
@@ -26,13 +26,13 @@ namespace GraphQlService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<TestDbContext>(x => x.UseInMemoryDatabase($"TestDb"));
+            services.AddDbContext<ServiceDbContext>(x => x.UseInMemoryDatabase($"TestDb"));
 
-            services.AddScoped<IRepository, TestRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddScoped<AppSchema>();
-            services.AddSingleton<TestUpdatesMessagingService>();
+            services.AddSingleton<UserMessagingService>();
 
             services.AddGraphQL(o => { o.ExposeExceptions = true; })
                 .AddGraphTypes(ServiceLifetime.Scoped)
@@ -42,7 +42,7 @@ namespace GraphQlService
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, TestDbContext dbContext)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ServiceDbContext dbContext)
         {
             if (env.IsDevelopment())
             {
