@@ -6,6 +6,7 @@ using GraphQL;
 using GraphQlClient.Library.Helpers;
 using GraphQlClient.Library.Model;
 using Newtonsoft.Json;
+using GraphQl.Client.Library.Model;
 
 namespace GraphQlClient.Library.Client
 {
@@ -21,30 +22,33 @@ namespace GraphQlClient.Library.Client
             }, new NewtonsoftJsonSerializer());
         }
 
-        public List<Test> GetAllTests()
+        public List<User> GetAllUsers()
         {
             var request = new GraphQLRequest()
             {
-                Query = QueryBuilder.GetAllTestsQuery(),
+                Query = QueryBuilder.GetAllUsersQuery(),
             };
 
-            var response = _client.SendQueryAsync<object>(request);
-            var result = JsonConvert.DeserializeObject<TestData>(response.Result.Data.ToString());
-
-            return result.Tests ;
+            var result = GetUsers(request);
+            return result.Users;
         }
 
-        public Test GetTest(int testId)
+        public User GetUser(string emailID)
         {
             var request = new GraphQLRequest()
             {
-                Query = QueryBuilder.GetTestForIdQuery(testId),
+                Query = QueryBuilder.GetUserWithID(emailID),
             };
 
-            var response = _client.SendQueryAsync<object>(request);
-            var result = JsonConvert.DeserializeObject<TestData>(response.Result.Data.ToString());
+            var result = GetUsers(request);
+            return result.Users[0];
+        }
 
-            return result.Tests[0];
+        private UserData GetUsers(GraphQLRequest request)
+        {
+            var response = _client.SendQueryAsync<object>(request);
+            var result = JsonConvert.DeserializeObject<UserData>(response.Result.Data.ToString());
+            return result;
         }
     }
 }

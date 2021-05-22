@@ -2,15 +2,15 @@
 {
     public class QueryBuilder
     {
-        public static string GetAllTestsQuery()
+        public static string GetAllUsersQuery()
         {
-            var query = @"{tests{id name}}";
+            var query = @"{users{pK name dateOfBirth emailID}}";
             return query;
         }
 
-        public static string GetTestForIdQuery(int testID)
+        public static string GetUserWithID(string emailID)
         {
-            var query = @"test(id:"+testID+@"){id name tester description results{resultId verdict}}";
+            var query = @"user(userID:" + emailID + @"){pK name dateOfBirth emailID}";
             return query;
         }
     }

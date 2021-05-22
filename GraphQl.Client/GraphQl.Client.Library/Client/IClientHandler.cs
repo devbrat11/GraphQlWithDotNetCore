@@ -5,8 +5,8 @@ namespace GraphQlClient.Library.Client
 {
     public interface IClientHandler
     {
-        List<Test> GetAllTests();
-        Test GetTest(int testId);
+        List<User> GetAllUsers();
+        User GetUser(string emailID);
     }
 
    

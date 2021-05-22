@@ -19,19 +19,19 @@ namespace GraphQlClient.Library.Client
             };
         }
 
-        public List<Test> GetAllTests()
+        public List<User> GetAllUsers()
         {
-            var result = _httpClient.GetAsync("tests").Result;
+            var result = _httpClient.GetAsync("users").Result;
             var data = result.Content.ReadAsStringAsync();
-            var tests = JsonConvert.DeserializeObject<List<Test>>(data.Result);
-            return tests;
+            var users = JsonConvert.DeserializeObject<List<User>>(data.Result);
+            return users;
         }
 
-        public Test GetTest(int testId)
+        public User GetUser(string emailID)
         {
-            var result = _httpClient.GetAsync($"tests/{testId}").Result;
+            var result = _httpClient.GetAsync($"users/{emailID}").Result;
             var data = result.Content.ReadAsStringAsync();
-            var test = JsonConvert.DeserializeObject<Test>(data.Result);
+            var test = JsonConvert.DeserializeObject<User>(data.Result);
             return test;
         }
     }
