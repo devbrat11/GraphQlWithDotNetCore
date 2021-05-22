@@ -25,14 +25,13 @@ namespace GraphQlService.GraphQl.UserService
                     if (isUserAdded)
                     {
                         messagingService.AddUserAddedMessage(user);
-                        return user;
+                        return repository.GetUser(user.EmailID);
                     }
                     else
                     {
                         context.Errors.Add(new GraphQL.ExecutionError("User cannot be added."));
                         return null;
                     }
-                   
                 }
                 );
 

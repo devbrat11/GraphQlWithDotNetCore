@@ -64,9 +64,6 @@ namespace GraphQlService
 
             app.UseHttpsRedirection();
             app.UseMvc();
-
-            dbContext.Seed();
-
         }
     }
 }

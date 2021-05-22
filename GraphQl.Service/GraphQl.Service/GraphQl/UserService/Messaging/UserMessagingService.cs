@@ -15,7 +15,7 @@ namespace GraphQlService.GraphQl.UserService.Messaging
         {
             var userAddedMessage = new UserAddedMessage()
             {
-                UserId = user.UserID,
+                UserId = user.EmailID,
                 UserName = user.Name,
                 DateOfBirth = user.DateOfBirth
             };

@@ -13,7 +13,7 @@ namespace GraphQlService.GraphQl.UserService.Types
             Name = "userRegistrationInfo";
             Field<NonNullGraphType<StringGraphType>>("name");
             Field<DateTimeGraphType>("dateOfBirth");
-            Field<NonNullGraphType<StringGraphType>>("userID");
+            Field<NonNullGraphType<StringGraphType>>("emailID");
             Field<StringGraphType>("password");
         }
     }

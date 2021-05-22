@@ -3,7 +3,7 @@ query getUserWithID {
     pK
     name
     dateOfBirth
-    userID
+    emailID
   }
 }
 
@@ -12,9 +12,27 @@ query getAllUsers{
     pK
     name
 	dateOfBirth
-    userID
+    emailID
   }
 }
 
+mutation($user:userRegistrationInfo!)
+{
+  addUser(user:$user){
+    pK
+    name
+    dateOfBirth
+    emailID
+  }
+}
+
+{
+  "user":{
+    "name": "Ajay",
+    "dateOfBirth": "08-04-1992",
+    "emailID": "ajay@abc.com",
+    "password": "ajay"
+}
+}
 
 

@@ -17,7 +17,7 @@ namespace GraphQlService.Data
 
         public bool AddUser(UserRegistrationInfo userInfo)
         {
-            if (IsUserExists(userInfo.UserID))
+            if (IsUserExists(userInfo.EmailID))
             {
                 return false;
             }
@@ -36,7 +36,7 @@ namespace GraphQlService.Data
 
         public User GetUser(string userId)
         {
-            return _context.Users.FirstOrDefault(x => x.UserID.Equals(userId));
+            return _context.Users.FirstOrDefault(x => x.EmailID.Equals(userId));
         }
 
         public bool IsUserValid(LoginCredential userLoginCredentials)
@@ -59,10 +59,10 @@ namespace GraphQlService.Data
             if (user != null)
             {
                 user.Name = updatedUserDetails.Item1.Name;
-                user.UserID = updatedUserDetails.Item1.UserID;
+                user.EmailID = updatedUserDetails.Item1.EmailID;
                 user.DateOfBirth = updatedUserDetails.Item1.DateOfBirth;
 
-                var userCredential = _context.UserCredentials.FirstOrDefault(x => x.UserID.Equals(user.UserID));
+                var userCredential = _context.UserCredentials.FirstOrDefault(x => x.UserID.Equals(user.EmailID));
 
                 if (userCredential != null)
                 {
@@ -74,7 +74,7 @@ namespace GraphQlService.Data
 
         private bool IsUserExists(string userId)
         {
-            return _context.Users.Any(x => x.UserID.Equals(userId));
+            return _context.Users.Any(x => x.EmailID.Equals(userId));
         }
     }
 
@@ -86,11 +86,11 @@ namespace GraphQlService.Data
             {
                 Name = userInfo.Name,
                 DateOfBirth = userInfo.DateOfBirth,
-                UserID = userInfo.UserID,
+                EmailID = userInfo.EmailID,
             };
             var userCredentials = new LoginCredential()
             {
-                UserID = userInfo.UserID,
+                UserID = userInfo.EmailID,
                 Password = userInfo.Password
             };
             return new Tuple<User, LoginCredential>(user, userCredentials);

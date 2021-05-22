@@ -8,14 +8,14 @@ namespace GraphQlService.Data
     {
         public ServiceDbContext(DbContextOptions<ServiceDbContext> options) : base(options)
         {
-
+            this.Seed();
         }
 
         public DbSet<User> Users { get; set; }
         public DbSet<LoginCredential> UserCredentials { get; set; }
     }
 
-    public static class ContextExtesions
+    public static class ContextExtensions
     {
         public static void Seed(this ServiceDbContext dbContext)
         {
@@ -30,19 +30,19 @@ namespace GraphQlService.Data
                 dbContext.Users.AddRange(
                  new User
                  {
-                     UserID = "abc1@graphqlservice.com",
+                     EmailID = "abc1@graphqlservice.com",
                      Name = "Devbrat Singh",
                      DateOfBirth = new System.DateTime(1993,07,11),
                  },
                   new User
                   {
-                      UserID = "abc2@graphqlservice.com",
+                      EmailID = "abc2@graphqlservice.com",
                       Name = "Anoop Sharma",
                       DateOfBirth = new System.DateTime(1993, 07, 11),
                   },
                    new User
                    {
-                       UserID = "abc3@graphqlservice.com",
+                       EmailID = "abc3@graphqlservice.com",
                        Name = "Anshul Jain",
                        DateOfBirth = new System.DateTime(1993, 07, 11),
                    }

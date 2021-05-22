@@ -11,7 +11,7 @@ namespace GraphQl.Service.Entities
         public Guid PK { get; set; }
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public string UserID { get; set; }
+        public string EmailID { get; set; }
     }
 
     public class LoginCredential

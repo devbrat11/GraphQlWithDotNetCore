@@ -15,7 +15,7 @@ namespace GraphQl.Service.GraphQl.UserService.Types
             Field(x => x.PK, type: typeof(IdGraphType));
             Field(x => x.Name);
             Field(x => x.DateOfBirth);
-            Field(x => x.UserID);
+            Field(x => x.EmailID);
         }
     }
 }
